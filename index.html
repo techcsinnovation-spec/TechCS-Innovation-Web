@@ -16,34 +16,35 @@
 
 <header class="site-header" id="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="#inicio">
+    <a class="brand" href="#inicio" data-tab-link="inicio">
       <img src="img/logo.jpeg" class="brand-mark" alt="TechC&S Innovation">
       <span class="brand-name">TechC&amp;S<em>Innovation</em></span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
-    <nav class="site-nav" id="siteNav">
-      <a href="#soluciones">Soluciones</a>
-      <a href="#por-que">Por qué nosotros</a>
-      <a href="#nosotros">Nosotros</a>
-      <a class="nav-cta" href="#contacto">Escríbenos</a>
+        <nav class="site-nav" id="siteNav">
+      <a href="#inicio" data-tab-link="inicio" class="active">Inicio</a>
+      <a href="#soluciones" data-tab-link="soluciones">Soluciones</a>
+      <a href="#por-que" data-tab-link="por-que">Por qué nosotros</a>
+      <a href="#nosotros" data-tab-link="nosotros">Nosotros</a>
+      <a class="nav-cta" href="#contacto" data-tab-link="contacto">Escríbenos</a>
     </nav>
   </div>
 </header>
 
-<main id="inicio">
+<main>
 
   <!-- HERO -->
-  <section class="hero">
+    <section class="hero tab-panel active" id="inicio">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="kicker">Desarrollo de software a la medida</p>
         <h1>El software que pone en orden tu restaurante o negocio</h1>
         <p class="lede">Reservas, inventario, nómina y soporte técnico en un solo lugar — construido alrededor de cómo trabaja realmente tu equipo, no al revés.</p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Habla con nosotros</a>
-          <a href="#soluciones" class="btn btn-ghost">Ver soluciones</a>
+           <a href="#contacto" class="btn btn-primary" data-tab-link="contacto">Habla con nosotros</a>
+          <a href="#soluciones" class="btn btn-ghost" data-tab-link="soluciones">Ver soluciones</a>
         </div>
       </div>
 
@@ -87,10 +88,8 @@
     </div>
   </section>
 
-  <div class="tear" aria-hidden="true"></div>
-
   <!-- SOLUCIONES -->
-  <section class="solutions" id="soluciones">
+  <section class="solutions tab-panel" id="soluciones">
     <div class="wrap">
       <div class="section-head">
         <h2>Soluciones pensadas para tu operación diaria</h2>
@@ -139,7 +138,7 @@
   </section>
 
   <!-- POR QUÉ NOSOTROS -->
-  <section class="why" id="por-que">
+  <section class="why tab-panel" id="por-que">
     <div class="wrap">
       <div class="section-head section-head-light">
         <h2>Lo que sigue después de la entrega</h2>
@@ -166,7 +165,7 @@
   </section>
 
   <!-- NOSOTROS -->
-  <section class="team" id="nosotros">
+  <section class="team tab-panel" id="nosotros">
     <div class="wrap">
       <div class="section-head">
         <h2>Quiénes hacemos esto</h2>
@@ -188,7 +187,7 @@
   </section>
 
   <!-- CONTACTO -->
-  <section class="contact" id="contacto">
+  <section class="contact tab-panel" id="contacto">
     <div class="wrap contact-grid">
       <div>
         <h2>Convierte tu negocio en uno moderno y organizado</h2>
